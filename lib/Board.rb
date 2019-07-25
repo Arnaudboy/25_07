@@ -9,7 +9,7 @@ require_relative 'Show'
 
 
 class Board
- attr_accessor :cases, :tab
+ attr_accessor :all_cases, :tab
 
 #affichage des 9 cases
 #(relie BoardCase et Game) remplit class Boardcase avec des strings "x" et "o"
@@ -19,22 +19,11 @@ class Board
 
 	def initialize  #Elle doit créer 9 instances BoardCases rangées dans un array/hash qui est l'attr_accessor de la classe
 		@tab = []
-		@all_cases = [
-			cases1 = Board_Cases.new("A1") , 
-			cases2 = Board_Cases.new("A2") , 
-			cases3 = Board_Cases.new("A3") , 
-			cases4 = Board_Cases.new("B1") , 
-			cases5 = Board_Cases.new("B2") , 
-			cases6 = Board_Cases.new("B3") , 
-			cases7 = Board_Cases.new("C1") , 
-			cases8 = Board_Cases.new("C2") , 
-			cases9 = Board_Cases.new("C3") 
-		]
+		@all_cases = ['0', '1', '2', '3', '4', '5', '6', '7', '8']
   	end
 
 
 	def play_turn (player)
-		@tab = []
 
 		i= 0
 		
