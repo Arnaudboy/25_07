@@ -8,7 +8,7 @@ require_relative 'Board'
 require_relative 'Show'
 
 
-class Board
+class Board < Board_Cases
  attr_accessor :all_cases, :tab
 
 #affichage des 9 cases

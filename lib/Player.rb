@@ -1,6 +1,3 @@
-require 'bundler'
-Bundler.require
-
 require_relative 'Player'
 require_relative 'Game'
 require_relative 'Board_Cases'
